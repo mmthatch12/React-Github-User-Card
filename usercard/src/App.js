@@ -35,7 +35,7 @@ class App extends React.Component {
   }
 
   getUserFollowers = () => {
-    Axios.get(`https://api.github.com/users/mmthatch12/following`)
+    Axios.get(`https://api.github.com/users/mmthatch12/followers`)
       .then(response => {
         const theFollowers = response.data
         console.log("theFollowers", theFollowers)
