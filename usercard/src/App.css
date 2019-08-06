@@ -9,7 +9,7 @@
 .userCard {
   border: 3px solid black;
   width: 300px;
-  height: 300px;
+  height: 350px;
   margin: auto;
 }
 
@@ -18,10 +18,16 @@
   border: 1px solid black;
 }
 
+.hideFollowers {
+  display: none;
+}
+
 .followers {
   display: flex;
   flex-wrap: wrap;
 }
+
+
 
 .followerCard {
   border: 3px solid black;
@@ -34,6 +40,8 @@
   width: 125px;
   border: 1px solid black;
 }
+
+
 
 
 

@@ -4,7 +4,7 @@ const FollowerCard = ({ followerData }) => {
     console.log("followerData from FollowerCard", followerData)
 
     return (
-        <div className="followers">
+        <div className="followers, hideFollowers" >
             {followerData.map(follower => (
                 <div className='followerCard'>
                     <img src={follower.avatar_url} alt={follower.name} />
