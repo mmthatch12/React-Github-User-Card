@@ -10,12 +10,14 @@ class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      githubData: []
+      githubData: [],
+      followers: []
     }
   }
 
   componentDidMount() {
     this.getUserData()
+    this.getUserFollowers()
   }
 
   getUserData = () => {
@@ -30,6 +32,20 @@ class App extends React.Component {
         console.log(err)
       })
   
+  }
+
+  getUserFollowers = () => {
+    Axios.get(`https://api.github.com/users/mmthatch12/following`)
+      .then(response => {
+        const theFollowers = response.data
+        console.log("theFollowers", theFollowers)
+        this.setState({ followers: theFollowers })
+        console.log("this.state.followers", this.state.followers)
+      })
+      .catch(err => {
+        console.log(err)
+      })
+
   }
 
   render() {
