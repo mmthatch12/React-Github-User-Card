@@ -2,7 +2,15 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      githubData: []
+    }
+  }
+
+  
   return (
     <div className="App">
       <h1>Github users</h1>
