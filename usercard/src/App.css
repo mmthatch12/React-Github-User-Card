@@ -1,14 +1,38 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 25px auto;
+
 }
 
 .userCard {
   border: 3px solid black;
-  max-width: 40%;
+  width: 300px;
+  height: 300px;
+  margin: auto;
 }
 
 .userCard img {
-  max-width: 20%;
+  width: 125px;
+  border: 1px solid black;
+}
+
+.followers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.followerCard {
+  border: 3px solid black;
+  width: 300px;
+  height: 300px;
+  margin: 25px;
+}
+
+.followerCard img {
+  width: 125px;
+  border: 1px solid black;
 }
 
 
