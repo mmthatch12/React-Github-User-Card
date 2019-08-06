@@ -4,6 +4,11 @@
 
 .userCard {
   border: 3px solid black;
+  max-width: 40%;
+}
+
+.userCard img {
+  max-width: 20%;
 }
 
 
