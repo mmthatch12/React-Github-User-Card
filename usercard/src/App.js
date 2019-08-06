@@ -10,12 +10,14 @@ class App extends React.Component {
     }
   }
 
+  render() {
+    return (
+      <div className="App">
+        <h1>Github users</h1>
+      </div>
+    );
+  }
   
-  return (
-    <div className="App">
-      <h1>Github users</h1>
-    </div>
-  );
 }
 
 export default App;
