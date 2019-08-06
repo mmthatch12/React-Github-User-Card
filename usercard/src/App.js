@@ -3,6 +3,7 @@ import './App.css';
 import Axios from 'axios'
 
 import UserCard from './components/UserCard'
+import FollowerCard from './components/FollowerCard'
 
 
 
@@ -53,6 +54,7 @@ class App extends React.Component {
       <div className="App">
         <h1>Github users</h1>
         <UserCard userData={this.state.githubData} />
+        <FollowerCard followerData={this.state.followers} />
       </div>
     );
   }
