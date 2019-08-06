@@ -1,6 +1,8 @@
 import React from 'react';
 
-const UserCard = () => {
+const UserCard = ({ userData }) => {
+    console.log("userData from UserCard", userData)
+
     return (
         <h1>User Cards will be here!</h1>
     )

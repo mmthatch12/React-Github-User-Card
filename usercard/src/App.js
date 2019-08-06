@@ -36,7 +36,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Github users</h1>
-        <UserCard />
+        <UserCard userData={this.state.githubData} />
       </div>
     );
   }
