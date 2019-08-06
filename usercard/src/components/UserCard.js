@@ -4,7 +4,9 @@ const UserCard = ({ userData }) => {
     console.log("userData from UserCard", userData)
 
     return (
-        <h1>User Cards will be here!</h1>
+        <div>
+            <img src={userData.avatar_url} alt={userData.name} />
+        </div>
     )
     
     
