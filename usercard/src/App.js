@@ -14,9 +14,23 @@ class App extends React.Component {
     }
   }
 
-  // componentDidMount() {
+  componentDidMount() {
+    this.getUserData()
+  }
 
-  // }
+  getUserData = () => {
+    Axios.get(`https://api.github.com/users/mmthatch12`)
+      .then(response => {
+        const theInfo = response.data
+        console.log('theInfo', theInfo)
+        this.setState({ githubData: theInfo})
+        console.log("this.state.githubData", this.state.githubData)
+      })
+      .catch(err => {
+        console.log(err)
+      })
+  
+  }
 
   render() {
     return (
